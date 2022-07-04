@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+              <!-- COlor paggina con CSS en la seccion head -->
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;font-family: courier;}
+</style>
+</head>
+
+<body>
+<h1>Formulario Escuela</h1>
+
+  <!-- SECION DE CONSULTA A ESTUDIANTE-->
+<section>
+  <h2>Consulta Estudiante</h2>
+  <p>Por favor ingrese los siguientes datos del Alumno</p>
+ 
+  <label for="matricula">Matricula:</label><br>
+  <input type="text" id="matricula" name="matricula" ><br>
+  
+  <input type="submit" value="Buscar" onclick="funcionboton1()">
+</section>
+
+
+  <!-- SECION DE REGISTRO A ESTUDIANTE-->
+<section>
+
+<h2>Registro Estudiante </h2>
+ 
+ <form onclick="funcionboton2()">
+ 
+<p>Por favor ingrese los siguientes datos</p>
+
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="name" name="name" ><br>
+  
+  <label for="ApellidoPaterno">Apellido Paterno:</label><br>
+  <input type="text" id="ApellidoPaterno" name="ApellidoPaterno" ><br>
+  
+  <label for="ApellidoMaterno">Apellido Materno:</label><br>
+  <input type="text" id="ApellidoMaterno" name="ApellidoMaterno" ><br>
+  
+  <label for="edad">Edad:</label><br>
+  <input type="text" id="edad" name="edad" ><br>
+  
+   <label for="telefono">Telefono:</label><br>
+  <input type="text" id="telefono" name="telefono" ><br>
+  
+  <label for="direccion">Ingresa tu direccion:</label><br>
+  <input type="text" id="dir" name="dir" ><br><br>
+  
+  <!-- Formulario Materia -->
+
+  <label for="materia">Seleccione una materia:</label>
+  <select name="materia" id="materia">
+    <option value="espanol">Espanol</option>
+    <option value="matematicas">Matematicas</option>
+    <option value="ciencias">Ciencias</option>
+    <option value="ingles">ingles</option>
+    <option value="geografia">Geografia</option>
+    <option value="frances">Frances</option>
+  </select>
+  <br><br>
+  <label for="promedio">Promedio:</label><br>
+  <input type="text" id="promedio" name="promedio" ><br>
+  
+  <p>Pulsa Guardar para agregar al estudiante</p>
+  
+  <input type="submit" value="Guardar" >
+</form>
+   
+</section>   <!-- Finn Seccion -->
+
+
+  <!-- Funciones de los Botones -->
+<script>
+function funcionboton1() {
+  alert("Matricula:1 	Nombre: Ringo Lopez Martinez	 Telefono:55432168 	Direccion: CDMX	 Edad: 18	Materias: Espanol, Geografia, Ciencias 	Promedio:8.54");
+}
+
+function funcionboton2() {
+  alert("Usuario Agregado");
+}
+
+</script>
+
+
+</body>
+</html>
